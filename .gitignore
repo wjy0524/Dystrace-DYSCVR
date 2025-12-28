@@ -1,33 +1,27 @@
-# --- 백엔드 (Python) ---
+# --- Backend (Python) ---
 /backend/venv/
 /backend/.env
 /backend/.config_secret/
 
-# 파이썬 캐시
+# Python cache
 **/__pycache__/
 *.py[cod]
 
-
-# --- 프론트엔드 (Flutter/Dart) ---
+# --- Frontend (Flutter/Dart) ---
 **/.dart_tool/
-/build/
-
-# 로컬 설정
-/android/local.properties
-
-# Flutter 플러그인 메타
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 
-# --- 공통 ---
-# IDE 설정
-/.vscode/
-/.idea/
+# Flutter build output (DO NOT COMMIT)
+frontend/build/
 
-# macOS
+# Android local config
+/android/local.properties
+
+# --- Common ---
+.vscode/
+.idea/
 .DS_Store
 
-#machine learning 파이프라인
+# Machine learning pipeline
 /ml_pipeline/venv/
-
-/frontend/build/

@@ -1,11 +1,3 @@
-<!-- 🌌 HackTX 스타일 배너 -->
-<p align="center">
-  <img src="https://github.com/wjy0524/HackTX25-DYSCVER/blob/main/frontend/assets/images/banner.png" 
-       alt="Dystrace Hero Banner" 
-       width="100%" 
-       style="border-radius:10px;"/>
-</p>
-
 # Dystrace: Dyslexia Data Collection Platform
 
 <img width="1144" height="760" alt="image" src="https://github.com/user-attachments/assets/455e2e3c-66b7-4144-9605-c7b2070173b8" />

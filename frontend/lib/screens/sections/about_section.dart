@@ -62,6 +62,10 @@ class AboutSection extends StatelessWidget {
                 name: "Issac Choi",
                 role: "University of Texas at Austin\nComputer Science Major",
               ),
+              _MemberCard(
+                name: "Sophie Shim",
+                role: "University of South California\nComputer Science Major",
+              ),
             ],
           ),
         ],

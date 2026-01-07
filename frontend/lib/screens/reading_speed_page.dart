@@ -13,6 +13,11 @@ import 'history_page.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'comprehension_page.dart';
 
+const String API_BASE_URL = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'http://localhost:8000', // 로컬 개발용 fallback
+);
+
 class WordMetrics {
   final int fixationCount;
   final double avgFixationDuration;
@@ -114,7 +119,7 @@ class _ReadingSpeedPageState extends State<ReadingSpeedPage> {
   Future<void> _fetchPassages() async {
     try {
       final resp = await http.post(
-        Uri.parse('http://localhost:8000/get-passages'),
+        Uri.parse('$API_BASE_URL/get-passages'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'age': widget.participantAge,
@@ -213,7 +218,7 @@ class _ReadingSpeedPageState extends State<ReadingSpeedPage> {
     List<dynamic> eyeData, {
     required WordMetrics wordMetrics,
   }) async {
-    final uri = Uri.parse('http://localhost:8000/reading_test');
+    final uri = Uri.parse('$API_BASE_URL/reading_test');
     final request = http.MultipartRequest('POST', uri)
       ..fields['expected'] = _passages[_currentIndex]
       ..fields['eye_data'] = jsonEncode(eyeData)

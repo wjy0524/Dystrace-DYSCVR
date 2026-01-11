@@ -1,8 +1,9 @@
 {
+  "framework": null,
+  "buildCommand": "cd frontend && flutter build web",
+  "outputDirectory": "frontend/build/web",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }

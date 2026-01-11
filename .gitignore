@@ -12,8 +12,9 @@
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 
-# Flutter build output (DO NOT COMMIT)
-frontend/build/
+# --- Flutter build output ---
+build/*
+!build/web/
 
 # Android local config
 /android/local.properties

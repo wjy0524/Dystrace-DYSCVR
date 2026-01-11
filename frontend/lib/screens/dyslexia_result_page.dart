@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dyslexia_info_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../config/api.dart';
 
 class DyslexiaResultPage extends StatefulWidget {
   const DyslexiaResultPage({Key? key}) : super(key: key);
@@ -72,7 +73,7 @@ class _DyslexiaResultPageState extends State<DyslexiaResultPage> {
           totalQuestions > 0 ? totalCorrect / totalQuestions : 0;
 
       final resp = await http.post(
-        Uri.parse('http://localhost:8000/predict_dyslexia'),
+        Uri.parse('$API_BASE_URL/predict_dyslexia'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'wpm': avgWpm,

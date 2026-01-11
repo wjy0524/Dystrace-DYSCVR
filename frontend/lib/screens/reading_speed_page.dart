@@ -12,11 +12,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'history_page.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'comprehension_page.dart';
+import '../config/api.dart';
 
-const String API_BASE_URL = String.fromEnvironment(
-  'API_BASE_URL',
-  defaultValue: 'http://localhost:8000', // 로컬 개발용 fallback
-);
 
 class WordMetrics {
   final int fixationCount;

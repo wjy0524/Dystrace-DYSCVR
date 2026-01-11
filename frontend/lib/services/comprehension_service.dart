@@ -3,6 +3,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../model/comprehension.dart';
+import '../config/api.dart';
 
 Future<List<ComprehensionItem>> fetchComprehensionMaterial(
     int age,
@@ -10,7 +11,7 @@ Future<List<ComprehensionItem>> fetchComprehensionMaterial(
     String nativeLanguage,
 ) async {
   final resp = await http.post(
-    Uri.parse('http://localhost:8000/get-comprehension-material'),
+    Uri.parse('$API_BASE_URL/get-comprehension-material'),
     headers: {'Content-Type': 'application/json'},
     body: jsonEncode({
       'age': age,

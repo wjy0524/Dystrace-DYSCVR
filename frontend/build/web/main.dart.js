@@ -9426,7 +9426,7 @@ aAY:function aAY(a){this.a=a},
 aSO(a,b,c){return A.bqB(a,b,c)},
 bqB(a,b,c){var s=0,r=A.M(t.zP),q,p,o,n,m
 var $async$aSO=A.I(function(d,e){if(d===1)return A.J(e,r)
-while(true)switch(s){case 0:p=A.fI("http://localhost:8000/get-comprehension-material",0,null)
+while(true)switch(s){case 0:p=A.fI("https://dystrace-dyscvr.onrender.com/get-comprehension-material",0,null)
 o=t.N
 n=A.R(["Content-Type","application/json"],o,o)
 s=3
@@ -52774,7 +52774,7 @@ f+=B.d.cG(A.bF(J.b0(a,"correct_answers")))
 e+=B.d.cG(A.bF(J.b0(a,"total_questions")))}a0=i/k.gj9().length
 a1=h/(g/60)
 a2=e>0?f/e:0
-a7=A.fI("http://localhost:8000/predict_dyslexia",0,null)
+a7=A.fI("https://dystrace-dyscvr.onrender.com/predict_dyslexia",0,null)
 a9=t.N
 b1=A.R(["Content-Type","application/json"],a9,a9)
 s=9
@@ -53412,7 +53412,7 @@ return new A.T(s,new A.aN5(),A.U(s).i("T<1,k>")).aK(0," ")},
 Bk(){var s=0,r=A.M(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d
 var $async$Bk=A.I(function(a,b){if(a===1){p.push(b)
 s=q}while(true)switch(s){case 0:q=3
-i=A.fI("http://localhost:8000/get-passages",0,null)
+i=A.fI("https://dystrace-dyscvr.onrender.com/get-passages",0,null)
 h=t.N
 g=A.R(["Content-Type","application/json"],h,h)
 f=o.a
@@ -53513,7 +53513,7 @@ return A.L($async$qi,r)},
 tT(a,b,c){return this.asY(a,b,c)},
 asY(a,b,c){var s=0,r=A.M(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f
 var $async$tT=A.I(function(d,e){if(d===1)return A.J(e,r)
-while(true)switch(s){case 0:g=A.bfq("POST",A.fI("http://localhost:8000/reading_test",0,null))
+while(true)switch(s){case 0:g=A.bfq("POST",A.fI("https://dystrace-dyscvr.onrender.com/reading_test",0,null))
 f=g.x
 f.m(0,"expected",q.w[q.x])
 f.m(0,"eye_data",B.bi.yk(b,null))
